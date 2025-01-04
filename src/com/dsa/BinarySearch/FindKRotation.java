@@ -36,7 +36,7 @@ public class FindKRotation {
 		return ans;
 	}
 	public static void main(String[] args) {
-		List<Integer> arr = Arrays.asList(39, 6, 11, 14, 18, 36, 37, 38);
+		List<Integer> arr = Arrays.asList(39, 6, 11, 14, 18, 36, 37, 38, 39, 6, 11);
 		System.out.println(findKRotation(arr));
 	}
 }
