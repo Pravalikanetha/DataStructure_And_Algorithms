@@ -1,6 +1,13 @@
 package com.dsa.linkedlist;
 
 public class LinkedListDemo {
+	public static class Node {
+		int data;
+		Node next;
+		Node(int data){
+			this.data=data;
+		}
+	}
 	public static void displayReverse(Node head) {
 		if(head==null)return;
 		displayReverse(head.next);
@@ -26,13 +33,6 @@ public class LinkedListDemo {
 		}
 		return count;
 	}
-	public static class Node {
-		int data;
-		Node next;
-		Node(int data){
-			this.data=data;
-		}
-	}
 	public static Node insertAtEnd(Node head, int x) {
 		Node val = new Node(x);
 		Node temp = head;
@@ -44,25 +44,23 @@ public class LinkedListDemo {
 		}
 		temp.next=val;
 		return head;
-		
-		
 	}
 	public static void main(String[] args) {
 		Node a = new Node(1);
-//		Node b = new Node(8);
-//		Node c = new Node(3);
-//		Node d = new Node(4);
-//		Node e = new Node(5);
+		Node b = new Node(8);
+		Node c = new Node(3);
+		Node d = new Node(4);
+		Node e = new Node(5);
 
-//		a.next=b;
-//		b.next=c;
-//		c.next=d;
-//		d.next=e;
+		a.next=b;
+		b.next=c;
+		c.next=d;
+		d.next=e;
 
-//		displayReverse(a);
-//		System.out.println();
-//		int length = length(a);
-//		System.out.println("length->"+length);
+		displayReverse(a);
+		System.out.println();
+		int length = length(a);
+		System.out.println("length->"+length);
 		insertAtEnd(a, 10);
 		display(a);
 	}  
