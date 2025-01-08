@@ -1,7 +1,4 @@
 package com.dsa.linkedlist;
-
-import com.dsa.linkedlist.LinkedListDemo.Node;
-
 public class MiddleNodeOfLinkedList {
 	public static class ListNode {
 		int val;
