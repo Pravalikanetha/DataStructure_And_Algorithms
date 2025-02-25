@@ -4,6 +4,7 @@ public class KokoEatingBananas {
 	public static boolean finishWithInHours(int[] piles, int h, int k) {
         for(int i=0; i<piles.length; i++) {
         	int div = piles[i]/k;
+        	System.out.println(div+ " "+ k);
         	if(piles[i]%k!=0) {
         		div++;
         	}
@@ -29,11 +30,10 @@ public class KokoEatingBananas {
     }
     
 	public static void main(String[] args) {
-		int[] piles ={2,2};// {30,11,23,4,20};
-		int h=2;
+		int[] piles ={3,6,7,11};
+		int h=8;
 		System.out.println(minEatingSpeed(piles, h));
 	}
-
 }
 
 
