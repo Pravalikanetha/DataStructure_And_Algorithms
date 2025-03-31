@@ -2,7 +2,6 @@ package com.dsa.streams.employee;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Main {
 	public static void main(String[] args) {
@@ -14,7 +13,7 @@ public class Main {
 
 		List<Employee> list = Arrays.asList(e1,e2,e3,e4,e5);
 		
-		List<Employee> salaryMoreThen40k = list.stream().filter(i -> i.getSalary()>40000).collect(Collectors.toList());
+		List<Employee> salaryMoreThen40k = list.stream().filter(i -> i.getSalary()>40000).toList();
 
 		System.out.println(salaryMoreThen40k); 
 	}   
