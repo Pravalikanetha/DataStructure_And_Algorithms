@@ -1,4 +1,4 @@
-package com.dsa.BinarySearch;
+package com.dsa.binarysearch;
 
 public class NumberOfOccurences {
 	static int left(int[] arr, int target) {
